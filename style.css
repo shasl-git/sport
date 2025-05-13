@@ -27,7 +27,6 @@ a:hover{
     color:var(--color-light-grey)
 }
 a,
-button,
 input,
 textarea,
 svg * {
@@ -139,4 +138,77 @@ body{
     font-size: 360px;
     padding-left: 70px;
     margin-top: -80px;
+}    
+
+#secondPage{
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: var(--color-dark);
+    
+}
+#secondPage>div{
+    
+    max-height: 640px;
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+#page2texttop>div:first-child{
+    padding-top: 140px;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: transparent; /* Делаем текст прозрачным */
+    -webkit-text-stroke: 1px #404040;
+}
+#page2texttop>div:last-child{
+    margin-top: -100px;
+    margin-left: 30px;
+}
+#page2textKrest{
+    display: flex;
+    flex-direction: row;
+    font-size: 40px;
+    gap:8px;
+
+}
+
+#page2textKrest::before{
+    content: url("/icon/svg.qodef-svg--title-decoration.svg");
+    display: inline-block;
+    width: auto;           
+    height: auto; 
+}
+#page2textMrest{
+    padding-left:34px;
+    color:#C4C4C4;
+    font-family: Heebo-lite;
+    font-size: 16px;
+    letter-spacing: 0.8px; 
+    width: 390px;
+}
+
+#secondPage>div:last-child{
+    position: relative;
+    top: -55px;
+}
+.buttonPage2{
+    padding-left: 60px;
+}
+#buttonPage2{
+    position: relative;
+    z-index: 2;
+    width: 193px ;
+    height: 54px; 
+    background-color: transparent;
+    border-radius: 15% 15% 15% 15% / 50% 50% 50% 50% ;
+    border:1px solid var(--color-light);
+    margin-top: 75px;
+    color:white;
+    text-align: left;
+    padding-left: 31px;
+}
+.buttonPage2>div{
+    margin-top: -54px;
+    margin-left:138px;
 }
