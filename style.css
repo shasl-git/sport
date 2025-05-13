@@ -65,15 +65,16 @@ svg * {
     --transition-duration:0.2s;
 }
 body{
-    overflow: hidden;
+    
     font-family: Heebo-bold;
+    color:var(--color-light)
 }
 .header{
     display: flex;
     height: 90px;
     max-width: 1920px; /*  Используем max-width вместо width */
     margin: 0 auto;
-    background-color: #131619;
+    background-color: var(--color-dark-alternative);
     align-items: center;
 }
 .header-logo{
@@ -113,4 +114,29 @@ body{
     border-color: #FFFFFF;
     background-color: transparent;
     color:white;
+}
+#firstPage {
+    display: flex; 
+    flex-direction: column; 
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: var(--color-dark-alternative);
+}
+
+#firstPage > div:first-child {
+    display: flex;
+    padding-top: 370px;
+    padding-left: 120px;
+    align-items: end;
+    gap: 30px;
+}
+
+#firstPage > div:first-child > h3 {
+    font-size: 30px;
+}
+
+#firstPage > div:last-child {
+    font-size: 360px;
+    padding-left: 70px;
+    margin-top: -80px;
 }
