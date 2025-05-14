@@ -348,3 +348,162 @@ main{
     height: 20px;
     margin-top: -15px;
 }
+#sixPage{
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: var(--color-dark-alternative);
+    display: flex;
+    justify-content: center;
+}
+#sixPage>div{
+    width: 1300px;
+    margin: 0 auto;
+}
+#sixPage>div>div:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+    margin-top: -125px;
+}
+#sixPage>div>div:first-child>div{
+    font-size: 180px;
+    text-transform: uppercase;
+}
+#sixPage>div>div:first-child>img{
+   width: 127px;
+   height: 127px;
+}
+#sixPage>div>div:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sixpagetext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#sixpagetext>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#sixpagetext>div>div:first-child{
+    text-transform: uppercase;
+    font-size: 180px;
+    color: transparent; /* Делаем текст прозрачным */
+    -webkit-text-stroke: 1px #404040;
+}
+#sixpagetext>div>div:last-child{
+    text-align: center;
+    margin-top: -175px;
+}
+#sixpagetext>div>div:last-child>div:first-child{
+    font-size: 60px;
+    text-transform: uppercase;
+}
+#sixpagetext>div>div:last-child>div:first-child::before{
+    content: url("/icon/svg.qodef-svg--title-decoration.svg");
+    margin-left: -20px;
+    position: relative;
+    top: -20px;
+    left:-5px;
+}
+
+#sixpagetext>div>div:last-child>div:last-child{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: Heebo-lite;
+    text-align: center;   
+}
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 20px; /*  Отступ между элементами */
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+.form-input {
+  background-color: transparent;
+  border: 1px solid var(--color-light-grey);
+  border-radius: var(--border-radius);
+  color: var(--color-light);
+  font-size: 16px;
+  padding: 10px 20px;
+  width: 400px; /*  Устанавливаем ширину полей */
+  height: var(--input-height);  
+}
+.form-input::placeholder {
+  color: var(--color-light-grey); /*  Цвет placeholder */
+}
+.subscribe-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: var(--input-height);
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid white;    
+  color: white;               
+  font-size: 13px;
+  transition: background-color 1s ease, border-color 1s ease, color 1s ease;
+}
+.subscribe-button:hover {
+  border: none;
+  background-color: var(--color-light-grey);
+  color: black;
+}
+#sevenPage{
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: var(--color-dark);
+    display: flex;
+    flex-direction: row;
+}
+#sevenPage>div:first-child{
+    flex: 1 1;
+}
+#sevenPage>div:last-child{
+    flex: 1 1;;
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    justify-content: center;
+    align-items: center;
+}
+#sevenPageText>div:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    text-transform: uppercase;
+    font-size: 112px;
+    color: transparent; /* Делаем текст прозрачным */
+    -webkit-text-stroke: 1px #404040;
+}
+#sevenPageText>div:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#sevenPageText>div:last-child>div:first-child{
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -120px;
+}
+#sevenPageText>div:last-child>div:last-child{
+    text-align: center;
+    font-size: 16px;
+    font-family: Heebo-lite;
+    letter-spacing: 0.8px;
+    margin-top: 16px;
+    line-height: 28px;
+}
+#sevenPage>div:last-child>button{
+    margin-top: 40px;
+    margin-bottom: 200px;
+}
