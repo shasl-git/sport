@@ -459,6 +459,7 @@ main{
 }
 #sevenPage{
     max-width: 1920px;
+    max-height: 600px;
     margin: 0 auto;
     background-color: var(--color-dark);
     display: flex;
@@ -560,4 +561,61 @@ iframe {
     font-family: Heebo-lite;
     font-size: 20px;
     margin-bottom: 62px;
+}
+.scrollable-container {
+    width: 1920px;
+    height: 480px;
+    overflow-x: hidden;  
+    overflow-y: hidden;
+    white-space: nowrap;
+    cursor: grab;        
+    margin: 0 auto;
+    background-color: var(--color-dark-alternative);
+    scroll-behavior: smooth;
+}
+
+.scrollable-container:active {
+    cursor: grabbing; 
+}
+
+.image-container {
+    display: flex;
+    height: 100%;
+    gap: 30px;
+}
+
+.image-container img {
+    height: 480px;
+    width: auto;
+    -webkit-user-drag: none; /* Для старых браузеров Safari */
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+#tenPage{
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: var(--color-dark-alternative);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tenPage>div{
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#tenPage>div>div:first-child{
+flex:1 1;
+display: flex;
+justify-content: start;
+}
+
+#tenPage>div>div:last-child{
+display: flex;
+justify-content: end;
+flex:1 1;
 }
