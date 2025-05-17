@@ -601,7 +601,7 @@ iframe {
     align-items: center;
 }
 #tenPage>div{
-    max-width: 1300px;
+    width: 1300px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -609,13 +609,37 @@ iframe {
     align-items: center;
 }
 #tenPage>div>div:first-child{
-flex:1 1;
-display: flex;
-justify-content: start;
+    flex:1 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 #tenPage>div>div:last-child{
-display: flex;
-justify-content: end;
-flex:1 1;
+    display: flex;
+    flex:1 1;
+}
+#tenPageText>div:first-child{
+    font-size: 112px;
+    text-transform: uppercase;
+    color: transparent; /* Делаем текст прозрачным */
+    -webkit-text-stroke: 1px #404040;
+    margin-top: 100px;
+    margin-left: -80px;
+}
+#tenPageText>div:last-child>div:first-child{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-top: -100px;
+}
+#tenPageText>div:last-child>div:first-child::before{
+content: url("/icon/svg.qodef-svg--title-decoration.svg");
+    margin-left: -35px;
+}
+#tenPageText>div:last-child>div:last-child{
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    font-family: Heebo-lite;
 }

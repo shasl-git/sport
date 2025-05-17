@@ -4,10 +4,10 @@ const scrollableContainer = document.querySelector('.scrollable-container');
 let isDragging = false;
 let startX = 0;
 let scrollLeft = 0;
-let velocity = 0;  // Добавляем переменную для скорости
-let animationFrame; // Добавляем переменную для requestAnimationFrame
+let velocity = 0; 
+let animationFrame; 
 
-// Предварительная загрузка изображений (опционально)
+
 const images = document.querySelectorAll('.image-container img');
 images.forEach(img => {
   const src = img.getAttribute('src');
@@ -19,21 +19,21 @@ scrollableContainer.addEventListener('mousedown', (e) => {
     isDragging = true;
     startX = e.pageX - scrollableContainer.offsetLeft;
     scrollLeft = scrollableContainer.scrollLeft;
-    velocity = 0; // Сбрасываем скорость при каждом новом перетаскивании
-    cancelAnimationFrame(animationFrame); // Останавливаем предыдущую анимацию
+    velocity = 0; 
+    cancelAnimationFrame(animationFrame); 
     scrollableContainer.style.cursor = 'grabbing';
 });
 
 scrollableContainer.addEventListener('mouseleave', () => {
     isDragging = false;
     scrollableContainer.style.cursor = 'grab';
-    startInertiaScroll(); // Запускаем инерцию, если курсор покинул элемент
+    startInertiaScroll(); 
 });
 
 scrollableContainer.addEventListener('mouseup', (e) => {
     isDragging = false;
     scrollableContainer.style.cursor = 'grab';
-    startInertiaScroll(); // Запускаем инерцию при отпускании мыши
+    startInertiaScroll();
 });
 
 scrollableContainer.addEventListener('mousemove', (e) => {
@@ -41,7 +41,7 @@ scrollableContainer.addEventListener('mousemove', (e) => {
     e.preventDefault();
     const x = e.pageX - scrollableContainer.offsetLeft;
     const walk = (x - startX);
-    velocity = walk; // Обновляем скорость при каждом движении
+    velocity = walk; 
     scrollableContainer.scrollLeft = scrollLeft - walk;
 });
 
@@ -52,9 +52,9 @@ function startInertiaScroll() {
     function inertiaScroll() {
         currentScrollLeft -= velocity;
         scrollableContainer.scrollLeft = currentScrollLeft;
-        velocity *= 0.95; // Коэффициент замедления (можно настроить)
+        velocity *= 0.95; 
 
-        if (Math.abs(velocity) > 0.5) { // Минимальная скорость для продолжения анимации
+        if (Math.abs(velocity) > 0.5) { 
             animationFrame = requestAnimationFrame(inertiaScroll);
         }
     }
