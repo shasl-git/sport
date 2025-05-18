@@ -249,24 +249,36 @@
                             </div>
                         </div>
                     </div>
-                    <form class="styled-form">
-                        <label for="height">Height:</label><br>
-                        <input type="text" id="Height" name="Height" placeholder="Height/cm" class="form-input7" required><br><br>
-
-                        <label for="weight">Weight:</label><br>
-                        <input type="Weight" id="Weight" name="Weight" placeholder="Weight / kg" class="form-input7" required><br><br>
-
-                        <label for="age">Age:</label><br>
-                        <input type="Age" id="Age" name="Age" placeholder="Age" class="form-input7" required><br><br>
-
-                        <label for="gender">Gender:</label><br>
-                        <input type="Gender" id="Gender" name="Gender" placeholder="Gender" class="form-input7" required><br><br>
-
-                        <input type="submit" value="Calculate" class="submit-button">
+                    <form > 
+                        <div id="styled-form">
+                            <input type="text" id="Height" name="Height" placeholder="Height/cm" class="form-input7" required>
+                            <input type="Weight" id="Weight" name="Weight" placeholder="Weight / kg" class="form-input7" required>
+                            <input type="Age" id="Age" name="Age" placeholder="Age" class="form-input7" required>
+                            <input type="Gender" id="Gender" name="Gender" placeholder="Gender" class="form-input7" required>
+                        </div>
+                        
+                        <input type="submit" value="Calculate" id="submit-button">
                     </form>
                 </div>
                 <div>
-                    что то не понятное    
+                    <div id="circle">
+                        <div>
+                            <span class="left_circle first_child">BMI</span>
+                            <span class="right_circle first_child">Weight status</span>
+                            <span class="left_circle ">Below 18.5</span>
+                            <span class="right_circle ">Underweight</span>
+                            <span class="left_circle ">18.5 - 24.9</span>
+                            <span class="right_circle">Healthy</span>
+                            <span class="left_circle ">25.0 - 29.9</span>
+                            <span class="right_circle">Overweight</span>
+                            <span class="left_circle ">30.0 - and Above</span>
+                            <span class="right_circle">Obese</span>
+                        </div>
+                        <div>
+                            BMR  <span>Metabolic Rate</span> / BMI  <span>Body Mass Index</span>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </section>
