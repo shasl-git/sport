@@ -173,6 +173,7 @@ main{
     flex-direction: row;
     font-size: 40px;
     gap:8px;
+    text-transform: uppercase;
 
 }
 
@@ -730,4 +731,63 @@ content: url("/icon/svg.qodef-svg--title-decoration.svg");
 #circle>div:last-child>span{
     font-size: 14px;
     font-family: Heebo-lite;
+}
+
+#footer{
+    max-width: 1920px;
+    background-color: var(--color-dark);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+#footer>div{
+    display: flex;
+    flex-direction: column;
+}
+#footer>div>div:first-child{
+    display: flex;
+    flex-direction: column;
+}
+#footer_top{
+    display: flex;
+    gap: 60px;
+    margin-top: 140px;
+    margin-bottom: 70px;
+}
+#footer_top>a{
+    max-height: 50px;
+}
+#footer_top>div{
+    max-width: 850px;
+    font-family: Heebo-lite;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 33px;
+}
+#footer_down{
+    display: flex;
+    gap:30px;
+}
+#footer_down>div{
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    gap:15px
+    
+}
+.footer_down_article{
+    font-size: 22px;
+    text-transform: uppercase;
+    display: flex;
+    gap:8px;
+    align-items: center;
+}
+.footer_down_info{
+    font-family: Heebo-lite;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.8px;
+}
+#footer_down_info_1{
+    
 }
