@@ -65,7 +65,7 @@ svg * {
 }
 body{
     font-family: Heebo-bold;
-    color:var(--color-light)
+    color:var(--color-light);
 }
 .header{
     overflow: hidden;
@@ -739,6 +739,7 @@ content: url("/icon/svg.qodef-svg--title-decoration.svg");
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 #footer>div{
     display: flex;
@@ -747,6 +748,7 @@ content: url("/icon/svg.qodef-svg--title-decoration.svg");
 #footer>div>div:first-child{
     display: flex;
     flex-direction: column;
+    margin-bottom: 170px;
 }
 #footer_top{
     display: flex;
@@ -787,7 +789,77 @@ content: url("/icon/svg.qodef-svg--title-decoration.svg");
     font-size: 16px;
     line-height: 28px;
     letter-spacing: 0.8px;
+    max-width: 300px;
 }
-#footer_down_info_1{
-    
+
+.input-container {
+    display: flex;
+    border: 1px solid var(--color-dark-grey);
+    border-radius: var(--border-radius);
+    color: var(--color-dark-grey);
+    overflow: hidden;
+    width: 300px; 
+    height: var(--input-height); 
+    align-items: center; 
 }
+
+.input-field {
+    flex: 1;
+    border: none;
+    background-color: transparent; 
+    color: #C4C4C4; 
+    padding: 10px 20px; 
+    outline: none; 
+    font-size: 16px; 
+    letter-spacing: 0.8px;
+    font-family: Heebo-lite;
+}
+
+.send-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 0px;
+    cursor: pointer;
+    width: var(--input-height);
+    height: var(--input-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+.send-button>img{
+    height: var(--input-height);
+    width: var(--input-height);
+}
+.send-button:hover {
+    opacity: 0.8; 
+}
+.footer_down_info>div:last-child{
+    display: flex;
+    margin-top: 50px;
+    width: 180px;
+    height: auto;
+    justify-content:space-between;
+}
+.footer_down_info .footer-icon_smm img {  /* Более конкретный селектор */
+    width: auto !important;
+    height: auto !important;
+    max-width: none !important;
+    max-height: none !important;
+}
+#underFooter{
+    max-width: 1920px;
+    background-color: var(--color-dark-alternative);
+    margin: 0 auto;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#underFooter>div{
+    width: 1300px;
+    font-family: Heebo-lite;
+    font-size: 14px;
+}
+
